@@ -1,4 +1,4 @@
-<% if (login) { %>
+<!-- <% if (login) { %>
   <nav class="navbar navbar-dark bg-dark p-4">
     </nav>
 <% }
@@ -9,11 +9,22 @@ else {%>
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h4 class="text-white">Collapsed content</h4>
-          <span class=" right text-muted">Toggleable via the navbar brand.</span>
-        </div>
-      </div>
   </div>
- <% } %>
+ <% } %> -->
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Dropdown -->
+  <button class="openbtn bg-dark" onclick="openNav()">☰</button>  
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <!-- Brand -->
+  <a class="navbar-brand " href="#"> <i class="fas fa-wallet "></i> +</a>
+  
+
+
+</nav> 

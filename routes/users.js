@@ -21,4 +21,8 @@ router.get('/counter', (req, res, next) => {
   res.render('users/counter', { login: true })
 })
 
+// Question
+router.get('/qes', (req, res, next) => {
+  res.render('users/qes', { login: true })
+})
 module.exports = router
